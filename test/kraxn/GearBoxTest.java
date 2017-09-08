@@ -104,6 +104,11 @@ public class GearBoxTest {
         String expResult = "  [gear box]  currentgear -> N";
         String result = instance.toString();
         assertEquals(expResult, result);
+        
+        instance.shiftUp() ;
+        expResult = "  [gear box]  currentgear -> 1";
+        result = instance.toString();
+        assertEquals(expResult, result);        
     }
 
 }
